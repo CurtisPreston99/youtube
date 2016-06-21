@@ -11,7 +11,7 @@ void settings(){
   keys[0]=false;
   keys[1]=false;
   
-  //co
+  //obj
   obj1[0]=100;
   obj1[1]=100;
   obj1[2]=50;
@@ -24,7 +24,9 @@ void draw(){
   rect(player[1],player[2],50,50);
   //printArray(kp);
   if(keys[0]){
+
     player[1]-=player[3];
+
   }
   if(keys[22]){
     player[2]-=player[3];
@@ -35,7 +37,7 @@ void draw(){
   if(keys[2]){
     player[1]+=player[3];
   }
-  printArray(keys);
+  printArray(player);
   
   rect(obj1[0],obj1[1],obj1[2],obj1[3]);
 }
