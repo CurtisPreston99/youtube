@@ -21,11 +21,10 @@ void draw(){
 
 
 void mousePressed(){
-  if((mouseX<(button[0]+button[2]))&&(mouseX>(button[0]))){//seeing if inline on x
+  button[4]=0;
   if((mouseY<(button[1]+button[3]))&&(mouseY>(button[1]))){
+  if((mouseX<(button[0]+button[2]))&&(mouseX>(button[0]))){//seeing if inline on x
   button[4]=1;
   }
-  }else{ button[4]=0;
-  
-}
+  }
 }
