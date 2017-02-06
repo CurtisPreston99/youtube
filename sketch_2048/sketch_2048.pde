@@ -11,11 +11,13 @@ grid[round(random(3))][round(random(3))]=2;
 
 void draw(){
 background(255);
+colorsq();
 grid();
 
 }
 
 void grid(){
+  fill(0);
 for(int x=0; x<5;x++){
   line((width/4)*x,0,(width/4)*x,height);
 }
