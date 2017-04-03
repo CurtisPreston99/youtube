@@ -29,7 +29,7 @@ void draw(){
 
 
 void up100(){
-if(one+two+three>100){
+while(one+two+three>100){
   if(one>two && one>three){
     two=two-1;
     three=three-1;
